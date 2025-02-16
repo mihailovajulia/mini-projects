@@ -1,5 +1,11 @@
 class Product: # Создаем класс Product с атрибутами
-    name: str  # Записываем название атрибута и его тип
-    description: str
-    price: float
-    quantity: int
+    name: str  # Записываем название атрибута и его тип: название
+    description: str # описание
+    price: float # цена
+    quantity: int # количество в наличии
+
+    def __init__(self, name, description, price, quantity):
+        self.name = name
+        self.description = description
+        self.price = price
+        self.quantity = quantity
